@@ -8,4 +8,7 @@ require_relative 'lib/board'
 
 new_board = Board.new
 
-p new_board
+p new_board.A1
+
+put new_board.show_board
+
