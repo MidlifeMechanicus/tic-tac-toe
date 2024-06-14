@@ -6,15 +6,11 @@ require_relative 'lib/player'
     # Better yet, data stored in array, but displayed in string containing index variables!!!
 # Need two players, and a series of prompts asking for their moves, which update the arrays
 # Need logic to determine when the game has been won
+# Need 'just played' flag and module?
 
 new_board = Board.new
 
 puts new_board.show_board
 
-player1 = Player.new("Player 1")
-
-def get_move
-    puts "What grid square would you like to claim?"
-    answer = gets
-    puts answer
-end
+# player1 = Player.new("Player 1")
+ new_board.get_move
