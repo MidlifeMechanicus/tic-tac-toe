@@ -1,7 +1,8 @@
 module GetMove
     def get_move
-        mark = "X"
+        self.turn % 2 == 0 ? mark = "O" : mark = "X"
         # colorise?
+        # Similar if statement for player handles
         puts "What grid square would you like to claim?"
         move = gets.chomp.to_i
         if move == 1 && self.A1 == 1
@@ -25,5 +26,6 @@ module GetMove
         else
             puts "That is not a valid option."
         end
+        self.turn +=1
     end
 end
