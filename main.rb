@@ -14,3 +14,5 @@ puts new_board.show_board
 
 # player1 = Player.new("Player 1")
  new_board.get_move
+
+ puts new_board.show_board
