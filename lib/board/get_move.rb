@@ -26,6 +26,6 @@ module GetMove
         else
             puts "That is not a valid option."
         end
-        self.turn +=1
+        # self.turn +=1
     end
 end

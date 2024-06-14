@@ -13,8 +13,13 @@ new_board = Board.new
 
 # player1 = Player.new("Player 1")
 
-3.times do
+4.times do
     new_board.get_move
     puts new_board.show_board
     new_board.check_winner
+    if new_board.winner == false
+        puts 'Next round!'
+    else
+        break
+    end
 end
