@@ -10,9 +10,11 @@ require_relative 'lib/player'
 
 new_board = Board.new
 
-puts new_board.show_board
 
 # player1 = Player.new("Player 1")
- new_board.get_move
 
- puts new_board.show_board
+3.times do
+    new_board.get_move
+    puts new_board.show_board
+    new_board.check_winner
+end
