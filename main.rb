@@ -1,4 +1,5 @@
 require_relative 'lib/board'
+require_relative 'lib/player'
 
 # Need to create a blank board and display it
     # Initial thought is printing series of arrays
@@ -10,5 +11,7 @@ new_board = Board.new
 
 p new_board.A1
 
-put new_board.show_board
+puts new_board.show_board
+
+player1 = Player.new("Player 1")
 
