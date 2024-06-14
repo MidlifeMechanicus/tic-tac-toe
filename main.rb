@@ -9,9 +9,12 @@ require_relative 'lib/player'
 
 new_board = Board.new
 
-p new_board.A1
-
 puts new_board.show_board
 
 player1 = Player.new("Player 1")
 
+def get_move
+    puts "What grid square would you like to claim?"
+    answer = gets
+    puts answer
+end
