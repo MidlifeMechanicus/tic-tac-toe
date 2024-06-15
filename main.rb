@@ -8,17 +8,20 @@ require_relative 'lib/player'
 # Need logic to determine when the game has been won
 # Need 'just played' flag and module?
 
+player1 = Player.new("Player 1")
+p player1.handle
+
+player2 = Player.new("Player 2")
+p player1.handle
+
 new_board = Board.new
 
-
-# player1 = Player.new("Player 1")
-
-4.times do
+3.times do
     new_board.get_move
     puts new_board.show_board
     new_board.check_winner
     if new_board.winner == false
-        puts 'Next round!'
+        puts "\n" + ' '
     else
         break
     end

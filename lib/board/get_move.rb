@@ -1,9 +1,11 @@
 module GetMove
     def get_move
         self.turn % 2 == 0 ? mark = "O" : mark = "X"
+        self.turn % 2 == 0 ? player = "Player 2" : player = "Player 1"
         # colorise?
         # Similar if statement for player handles
-        puts "What grid square would you like to claim?"
+        # Need move_valid variable for while loop
+        puts "What grid square would you like to claim, #{player}?"
         move = gets.chomp.to_i
         if move == 1 && self.A1 == 1
             self.A1 = mark
@@ -26,6 +28,6 @@ module GetMove
         else
             puts "That is not a valid option."
         end
-        # self.turn +=1
+        self.turn +=1
     end
 end
