@@ -21,7 +21,7 @@ class Board
         @player1 = ""
         @player2 = ""
         self.get_names
-        puts "The board is ready!"
+        puts "\n" + "The board is ready!"
         show_board
     end
     attr_accessor :A1, :A2, :A3, :B1, :B2, :B3, :C1, :C2, :C3, :turn, :winner, :player1, :player2
