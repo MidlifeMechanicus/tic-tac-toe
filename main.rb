@@ -1,5 +1,4 @@
 require_relative 'lib/board'
-require_relative 'lib/player'
 
 # Need to create a blank board and display it
     # Initial thought is printing series of arrays
@@ -8,15 +7,14 @@ require_relative 'lib/player'
 # Need logic to determine when the game has been won
 # Need 'just played' flag and module?
 
-player1 = Player.new("Player 1")
-p player1.handle
+# player1 = Player.new("Player 1")
 
-player2 = Player.new("Player 2")
-p player1.handle
+# player2 = Player.new("Player 2")
 
 new_board = Board.new
 
-3.times do
+
+4.times do
     new_board.get_move
     puts new_board.show_board
     new_board.check_winner

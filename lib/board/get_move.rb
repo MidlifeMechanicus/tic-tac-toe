@@ -1,13 +1,13 @@
 module GetMove
     def get_move
         self.turn % 2 == 0 ? mark = "O" : mark = "X"
-        self.turn % 2 == 0 ? player = "Player 2" : player = "Player 1"
+        self.turn % 2 == 0 ? player = self.player2 : player = self.player1
         valid_choice = false
         # colorise?
         # Similar if statement for player handles
         # Need move_valid variable for while loop
         while valid_choice == false
-          puts "What grid square would you like to claim, #{player}?"
+          puts "\n" + "What grid square would you like to claim, #{player}?"
           move = gets.chomp.to_i
           if move == 1 && self.A1 == 1
               self.A1 = mark
