@@ -2,6 +2,7 @@ require_relative 'board/show_board'
 require_relative 'board/get_move'
 require_relative 'board/check_winner'
 require_relative 'board/get_names'
+require_relative 'board/play_game'
 
 
 class Board
@@ -31,4 +32,5 @@ class Board
     include ShowBoard
     include GetMove
     include CheckWinner
+    include PlayGame
 end

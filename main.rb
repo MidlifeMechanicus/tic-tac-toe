@@ -13,14 +13,16 @@ require_relative 'lib/board'
 
 new_board = Board.new
 
+new_board.play_game
 
-4.times do
-    new_board.get_move
-    puts new_board.show_board
-    new_board.check_winner
-    if new_board.winner == false
-        puts "\n" + ' '
-    else
-        break
-    end
-end
+
+# 4.times do
+#     new_board.get_move
+#     puts new_board.show_board
+#     new_board.check_winner
+#     if new_board.winner == false
+#         puts "\n" + ' '
+#     else
+#         break
+#     end
+# end
